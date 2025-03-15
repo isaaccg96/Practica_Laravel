@@ -37,6 +37,23 @@ Si necesitas restaurar la base de datos de este proyecto, puedes usar el archivo
    ```bash
    mysql -u usuario -p nombre_de_tu_base_de_datos < esquema.sql
 
+   Sustituye usuario por tu usuario de MySQL y nombre_de_tu_base_de_datos por el nombre de la base de datos que has creado.
+
+3. Configura tu archivo .env en el proyecto Laravel con los parámetros correctos de conexión a la base de datos, por ejemplo:
+
+env
+Copiar
+Editar
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=example_app
+DB_USERNAME=root
+DB_PASSWORD=
+¡Y eso es todo! Ahora tu proyecto Laravel estará listo para funcionar con la base de datos restaurada.
+
+
+
 
 ## License
 
