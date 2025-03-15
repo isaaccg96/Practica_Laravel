@@ -48,6 +48,14 @@ Una vez que hayas descargado el proyecto desde GitHub, sigue estos pasos para co
     cp .env.example .env
     
   Luego, abre el archivo .env y asegúrate de configurar correctamente los parámetros de tu base de datos, como se mostró en el paso anterior. Por ejemplo:
+    ```bash
+        DB_CONNECTION=mysql
+        DB_HOST=127.0.0.1
+        DB_PORT=3306
+        DB_DATABASE=example_app
+        DB_USERNAME=root
+        DB_PASSWORD=
+   
     
 4. Generar la clave de aplicación de Laravel: Laravel necesita una clave de aplicación única para funcionar correctamente. Ejecuta el siguiente comando para generar esa clave:
 
