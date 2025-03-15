@@ -20,7 +20,7 @@ class PeliculasController extends Controller
         $pelicula = new Pelicula();
         $pelicula -> titulo = $request->get('titulo');
         $pelicula -> descripcion = $request->get('descripcion');
-        $pelicula -> save();
+        $pelicula -> save(); //Eloquent ORM
 
         return redirect('/peliculas');
     }
