@@ -61,7 +61,7 @@ Una vez que hayas descargado el proyecto desde GitHub, sigue estos pasos para co
    ```bash
     php artisan migrate
     
-5. Restaurar la base de datos (si es necesario): Si el proyecto usa una base de datos, asegúrate de haber restaurado el esquema de la base de datos utilizando el archivo esquema.sql, como se explicó antes.
+5. Restaurar la base de datos (si es necesario): Si el proyecto usa una base de datos, asegúrate de haber restaurado el esquema de la base de datos utilizando el archivo esquema.sql, como se explicará en el apartado "Restaurar la base de datos".
 
 6. Ejecutar las migraciones y las semillas (si es necesario): Si el proyecto tiene migraciones para crear las tablas en la base de datos, puedes ejecutarlas con el siguiente comando:
 
