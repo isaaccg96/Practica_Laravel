@@ -59,14 +59,14 @@ Una vez que hayas descargado el proyecto desde GitHub, sigue estos pasos para co
 4. Generar la clave de aplicación de Laravel: Laravel necesita una clave de aplicación única para funcionar correctamente. Ejecuta el siguiente comando para generar esa clave:
 
    ```bash
-    php artisan migrate
+    php artisan key:generate
     
 5. Restaurar la base de datos (si es necesario): Si el proyecto usa una base de datos, asegúrate de haber restaurado el esquema de la base de datos utilizando el archivo esquema.sql, como se explicará en el apartado "Restaurar la base de datos".
 
 6. Ejecutar las migraciones y las semillas (si es necesario): Si el proyecto tiene migraciones para crear las tablas en la base de datos, puedes ejecutarlas con el siguiente comando:
 
    ```bash
-    cp .env.example .env
+    php artisan migrate
    
   Si también hay datos de ejemplo o predeterminados que se deben insertar en las tablas, puedes ejecutar las semillas con:
     
