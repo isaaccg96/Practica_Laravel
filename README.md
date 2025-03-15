@@ -68,8 +68,10 @@ Una vez que hayas descargado el proyecto desde GitHub, sigue estos pasos para co
    ```bash
     cp .env.example .env
    
-  Si también hay datos de ejemplo o predeterminados que se deben insertar en las tablas, puedes ejecutar las semillas con "php artisan db:seed"
-
+  Si también hay datos de ejemplo o predeterminados que se deben insertar en las tablas, puedes ejecutar las semillas con:
+    
+    php artisan db:seed
+    
 7. Iniciar el servidor de desarrollo: Finalmente, para ver el proyecto en tu navegador, puedes iniciar el servidor de desarrollo integrado de Laravel con uno de los siguientes comandos:
    
    ```bash
