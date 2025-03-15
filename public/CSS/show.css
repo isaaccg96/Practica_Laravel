@@ -1,0 +1,49 @@
+/* Estilo general */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1a1a1a; /* Fondo negro suave */
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor principal */
+div {
+    background-color: #fff; /* Fondo blanco */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Título de la película */
+div:first-child {
+    font-size: 2em;
+    font-weight: 600;
+    color: #333; /* Gris oscuro */
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+/* Descripción de la película */
+div:last-child {
+    font-size: 1.2em;
+    color: #555; /* Gris más suave para la descripción */
+    line-height: 1.6;
+}
+
+/* Transiciones suaves */
+div > div:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}

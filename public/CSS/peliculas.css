@@ -1,0 +1,85 @@
+/* Estilo general */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1a1a1a; /* Fondo negro suave */
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    height: 100vh; /* Asegura que el body ocupe toda la altura de la pantalla */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #333; /* Fondo negro más suave para el título */
+    color: #fff;
+    font-size: 2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 3px solid #bbb; /* Gris suave para el borde */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Lista de películas */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 30px auto;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Elementos de la lista */
+li {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+}
+
+/* Enlace de las películas */
+a {
+    text-decoration: none;
+    color: #333; /* Gris oscuro para los enlaces */
+    font-size: 1.3em;
+    font-weight: 500;
+    transition: color 0.3s, transform 0.3s ease-in-out;
+}
+
+/* Efecto hover en el enlace */
+a:hover {
+    color: #ff8c00; /* Naranja para el hover */
+    transform: scale(1.05);
+}
+
+/* Efecto hover en el li */
+li:hover {
+    background-color: #f4f4f4; /* Color suave en el hover */
+    cursor: pointer;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Animación de entrada para la lista */
+ul li {
+    animation: fadeInUp 0.5s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
