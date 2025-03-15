@@ -41,12 +41,13 @@ Si necesitas restaurar la base de datos de este proyecto, puedes usar el archivo
 
 3. Configura tu archivo .env en el proyecto Laravel con los parámetros correctos de conexión a la base de datos, por ejemplo:
 
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=example_app
-DB_USERNAME=root
-DB_PASSWORD=
+    DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_DATABASE=example_app
+    DB_USERNAME=root
+    DB_PASSWORD=
+   
 ¡Y eso es todo! Ahora tu proyecto Laravel estará listo para funcionar con la base de datos restaurada.
 
 
