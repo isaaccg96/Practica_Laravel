@@ -24,6 +24,33 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 ---
 
+## Primeros pasos
+
+Una vez que hayas descargado el proyecto desde GitHub, sigue estos pasos para configurarlo y hacerlo funcionar correctamente en tu máquina local:
+
+1. **Descargar el proyecto:**
+   Si aún no has clonado el repositorio, hazlo usando el siguiente comando en tu terminal (en la carpeta donde quieras guardar el proyecto):
+   ```bash
+   git clone https://github.com/isaaccg96/Practica_Laravel.git
+
+2. Instalar las dependencias de Composer: Laravel usa Composer para manejar las dependencias del proyecto. Ve a la carpeta del proyecto y ejecuta el siguiente comando:
+   ```bash
+   cd nombre-del-repositorio
+   composer install
+Esto instalará todas las dependencias necesarias que están definidas en el archivo composer.json.
+
+3. Configurar el archivo .env: Laravel utiliza el archivo .env para configurar parámetros importantes del entorno, como la base de datos, el correo electrónico, etc. Si no tienes el archivo .env en el proyecto, crea uno a partir del archivo .env.example que viene incluido en el proyecto.
+    ```bash
+    cp .env.example .env
+Luego, abre el archivo .env y asegúrate de configurar correctamente los parámetros de tu base de datos, como se mostró en el paso anterior. Por ejemplo:
+     ```bash
+    DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_DATABASE=example_app
+    DB_USERNAME=root
+    DB_PASSWORD=
+
 ## Restaurar la base de datos
 
 Si necesitas restaurar la base de datos de este proyecto, puedes usar el archivo `esquema.sql` que se encuentra en este repositorio.
