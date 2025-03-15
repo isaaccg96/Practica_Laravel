@@ -30,26 +30,45 @@ Una vez que hayas descargado el proyecto desde GitHub, sigue estos pasos para co
 
 1. **Descargar el proyecto:**
    Si aún no has clonado el repositorio, hazlo usando el siguiente comando en tu terminal (en la carpeta donde quieras guardar el proyecto):
+   
    ```bash
    git clone https://github.com/isaaccg96/Practica_Laravel.git
 
-2. Instalar las dependencias de Composer: Laravel usa Composer para manejar las dependencias del proyecto. Ve a la carpeta del proyecto y ejecuta el siguiente comando:
+2. **Instalar las dependencias de Composer:** Laravel usa Composer para manejar las dependencias del proyecto. Ve a la carpeta del proyecto y ejecuta el siguiente comando:
+
    ```bash
    cd nombre-del-repositorio
    composer install
-Esto instalará todas las dependencias necesarias que están definidas en el archivo composer.json.
+   
+  Esto instalará todas las dependencias necesarias que están definidas en el archivo composer.json.
 
 3. Configurar el archivo .env: Laravel utiliza el archivo .env para configurar parámetros importantes del entorno, como la base de datos, el correo electrónico, etc. Si no tienes el archivo .env en el proyecto, crea uno a partir del archivo .env.example que viene incluido en el proyecto.
+   
     ```bash
     cp .env.example .env
-Luego, abre el archivo .env y asegúrate de configurar correctamente los parámetros de tu base de datos, como se mostró en el paso anterior. Por ejemplo:
-     ```bash
-    DB_CONNECTION=mysql
-    DB_HOST=127.0.0.1
-    DB_PORT=3306
-    DB_DATABASE=example_app
-    DB_USERNAME=root
-    DB_PASSWORD=
+    
+  Luego, abre el archivo .env y asegúrate de configurar correctamente los parámetros de tu base de datos, como se mostró en el paso anterior. Por ejemplo:
+    
+4. Generar la clave de aplicación de Laravel: Laravel necesita una clave de aplicación única para funcionar correctamente. Ejecuta el siguiente comando para generar esa clave:
+
+   ```bash
+    php artisan migrate
+    
+5. Restaurar la base de datos (si es necesario): Si el proyecto usa una base de datos, asegúrate de haber restaurado el esquema de la base de datos utilizando el archivo esquema.sql, como se explicó antes.
+
+6. Ejecutar las migraciones y las semillas (si es necesario): Si el proyecto tiene migraciones para crear las tablas en la base de datos, puedes ejecutarlas con el siguiente comando:
+
+   ```bash
+    cp .env.example .env
+   
+  Si también hay datos de ejemplo o predeterminados que se deben insertar en las tablas, puedes ejecutar las semillas con "php artisan db:seed"
+
+7. Iniciar el servidor de desarrollo: Finalmente, para ver el proyecto en tu navegador, puedes iniciar el servidor de desarrollo integrado de Laravel con uno de los siguientes comandos:
+   
+   ```bash
+    php artisan serve
+    php -S 127.0.0.1:8000 -t public
+
 
 ## Restaurar la base de datos
 
